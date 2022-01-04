@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @lightarrow
 - 👀 I’m interested in Bash, Python, JavaScript, Rust, & open source software.
-- 🌱 I’m currently learning Rust secure app development
-- 💞️ I’m looking to collaborate on a security focused Rust project
-- 📫 How to reach me on The Rust server in Discord
+- 🌱 I’m currently writing an HVAC controls app and deploying it in containers on multiple cloud platforms.
+- 💞️ I’m looking to collaborate on some Python Projects.
+- 📫 How to reach me email lightarrow@icloud.com
 
 <!---
 lightarrow/lightarrow is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
