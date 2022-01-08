@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @lightarrow
-- 👀 I’m interested in Bash, Python, JavaScript, Rust, & open source software.
+- 👀 I’m interested in Python, Rust, Golang & open source software.
 - 🌱 I’m currently writing an HVAC controls app and deploying it in containers on multiple cloud platforms.
-- 💞️ I’m looking to collaborate on some Python Projects.
+- 💞️ I’m looking to collaborate on some Pinteresting Projects.
 - 📫 How to reach me email lightarrow@icloud.com
 
 <!---
