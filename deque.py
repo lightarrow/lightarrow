@@ -1,6 +1,6 @@
 '''
 double-ended queue
-Deque("deck")
+Deque pronounced deck
 add front
 remove front
 there is no runtime advantage to
@@ -90,5 +90,4 @@ class Deque:
 
         The runtime is constant because all we're doing is comparing two values.
         """
-
         return self.items == []
