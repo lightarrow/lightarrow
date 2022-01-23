@@ -34,13 +34,29 @@ class Queue:
             return self.items.pip()
 
     def peek(self):
+        """
+        :returns the last item in the list. that represents the front-most item in the queue
+        Runtime O(1) constant time indexing to the last item and returning the value.
+        :return:
+        """
         if self.items:
           return self.items[-1]
         else:
             return None
 
     def size(self):
-        pass
+        """
+
+        :return: The size of the queue that is the length of the queue.
+        runtime O(1) constant time, because we areturn only the lengeth.
+
+        """
+        return len(self.items)
 
     def is_empty(self):
-        pass
+        """
+        Returns a Boolean weather the queue is empty.
+        O(1) or constant as checking for equality.
+        :return:
+        """
+        return self.items == []
