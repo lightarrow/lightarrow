@@ -21,7 +21,7 @@ class Stack:
     def pop(self):
         """
         Removes and returns the last item for the list with is also the item of the Stack
-        :optimizaion: O(1)
+        :optimization: O(1) constant time
         The runtime is constant time, because all it does is index to the last item of the list.
         :return:
         """
