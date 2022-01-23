@@ -1,3 +1,4 @@
+#!/bin/env python3
 from stack import Stack
 
 def match_symbols(symbol_str):

@@ -1,4 +1,4 @@
-#!/env python3
+#!/bin/env python3
 #Create a stack to use as a datatype for challenges.
 
 class Stack:
