@@ -11,6 +11,7 @@ empty()
 Recursion  Queues are recursive
 '''
 
+
 class Queue:
     def __init__(self):
         self.items = []
@@ -31,7 +32,7 @@ class Queue:
         :return:
         """
         if self.items:
-            return self.items.pip()
+            return self.items.pop()
 
     def peek(self):
         """
@@ -40,7 +41,7 @@ class Queue:
         :return:
         """
         if self.items:
-          return self.items[-1]
+            return self.items[-1]
         else:
             return None
 
