@@ -11,7 +11,7 @@ class Stack:
     def push(self, item):
         """
         accepts and item as a parameter adn appends it to the end of the list.
-        runtime is O(1), or constant time, because appending to the end of a list happens in constant time.
+        :runtime: is O(1), or constant time, because appending to the end of a list happens in constant time.
         :param item:
         :return:
         """
