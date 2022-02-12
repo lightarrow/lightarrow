@@ -10,7 +10,7 @@ You can click the Preview link to take a look at your changes.
 ## Shine Document
 
 ### Further
-App Development, Support, Vulnerability patching, Developed Monitoring, Developed microservices on AWS cloud platform. 
+App Development, Support, patching, Developed Monitoring, Developed microservices on AWS cloud platform. 
 
 Big win designing, architecting, and connecting on-prem to cloud batch systems.  
 Custom development of scheduling batch jobs with AWS cloud with the operations team as a customer. 
