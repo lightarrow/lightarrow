@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @lightarrow
 - 👀 I’m interested in Solving Problems
-- 🌱 I’m currently writing computer science chalenges
--  Data Structures: Stacks, Queues, and Deques
+- 🌱 I’m currently writing computer science chalenges with algorithms design across different industries.
 - 📫 How to reach me email lightarrow@icloud.com
 
 <!---
