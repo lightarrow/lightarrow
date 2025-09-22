@@ -26,7 +26,7 @@ class PrivilegesRequired:
         self.high = 0.27
         self.no_auth = 0.85
 
-class UserInteractonMetric:
+class UserInteractionMetric:
     def __init__(self,no_interaction, required_interaction):
         self.no_interaction = 0.85
         self.required_interaction = 0.62
@@ -49,9 +49,9 @@ class Scope:
         self.changed = False
         self.unchanged = False
 
-class InterpertVector:
-    def __init__(self,vector, cvss_split):
-        self.vector = "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
+class InterpretVector:
+    def __init__(self, vector, cvss_split):
+        self.vector = vector
         self.cvss_split = None
 
 class KnownExploitedVulnerability:
@@ -60,15 +60,15 @@ class KnownExploitedVulnerability:
 
 if __name__=='__main__':
 
-    while True:
+    countVector = 0
+    vector_limit = 20
+    while countVector < vector_limit:
 
         try:
-            result =
+            my_vector = InterpretVector("CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L", None)
         except:
-            print('NAN error')
-            continue
-        else:
-            print('Thats OK')
+            print(f'Except Error')
             break
         finally:
-            print('This happens no matter what.')
+            print(f'Vector results: {my_vector.vector}')
+            countVector += 1
