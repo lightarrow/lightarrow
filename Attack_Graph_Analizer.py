@@ -21,8 +21,8 @@ class PrivilegesRequired:
     def __init__(self,low, high):
         self.low = 0.62
         self.high = 0.27
-        self.none = 0.85
+        self.no_auth = 0.85
 
-
+class UserInteractonMetric
 
 if __name__=='__main__':
