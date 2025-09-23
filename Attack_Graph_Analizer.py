@@ -83,7 +83,7 @@ class AttackChainMembers:
         self.man_hours_to_perform_breach = 0
         self.attack_team_members = {}
         self.attack_chain_delivered_to_red_team = True
-        self.blue_team_prepared_for_excerise = True
+        self.blue_team_prepared_for_exercise = True
         self.host_cartography_complete = True
         self.table_top_exercise_status = 'Miniatures painted, generals prepared.'
 
