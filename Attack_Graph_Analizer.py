@@ -73,8 +73,19 @@ class HostCalculation:
         self.asset_recovery_speed = 0
         self.asset_data_hours_lost_when_recovered = 0
 
-        
-
+class AttackChainMembers:
+    def __init__(self):
+        self.hosts = {}
+        self.ip_chain = {}
+        self.vulnerability_correlations = {}
+        self.cost_to_implement_attack = 0
+        self.price_to_implement_attack = 0
+        self.man_hours_to_perform_breach = 0
+        self.attack_team_members = {}
+        self.attack_chain_delivered_to_red_team = True
+        self.blue_team_prepared_for_excerise = True
+        self.host_cartography_complete = True
+        self.table_top_exercise_status = 'Miniatures painted, generals prepared.'
 
 if __name__=='__main__':
     impact_sub = 0
