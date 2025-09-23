@@ -62,19 +62,24 @@ class KnownExploitedVulnerability:
         self.exploited = False
 
 if __name__=='__main__':
-
-    countVector = 0
-    vector_limit = 20
     impact_sub_score = 0
-    while countVector < vector_limit:
-
+    my_vector = "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
+    vector_two = "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    vector_four = "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L"
+    vector_dictionary = {}
+    count_vector = 0
+    vector_limit = 1
+    while count_vector < vector_limit:
         try:
-            my_vector = InterpretVector("CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L", None)
-            
+            for i in my_vector.split(sep='/'):
+                j = i.split(sep=':')
+                vector_dictionary[j[0]] = j[1]
+            count_vector += 1
+
         except Exception as e:
             log('Reason:', e)
             print('Reason:', e)
             break
         finally:
-            print(f'Vector results: {my_vector.vector}')
-            countVector += 1
+            print(f'Vector results: {vector_dictionary}')
+
