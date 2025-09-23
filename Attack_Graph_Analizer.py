@@ -63,7 +63,7 @@ class KnownExploitedVulnerability:
 
 if __name__=='__main__':
     impact_sub_score = 0
-    my_vector = "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
+    vector_one = "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
     vector_two = "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     vector_four = "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L"
     vector_dictionary = {}
