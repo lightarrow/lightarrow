@@ -8,6 +8,9 @@ This code takes CVSS version 3.x vectors and computes them.
 The vectors are then matched against host data to determine weight and priority.
 The risk will be calculated once the host data has been calculated.
 """
+from logging import log
+
+
 class AttackVector:
     def __init__(self,physical, local, adjacent, network):
         self.physical = 0.20
@@ -62,12 +65,15 @@ if __name__=='__main__':
 
     countVector = 0
     vector_limit = 20
+    impact_sub_score = 0
     while countVector < vector_limit:
 
         try:
             my_vector = InterpretVector("CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L", None)
-        except:
-            print(f'Except Error')
+            
+        except Exception as e:
+            log('Reason:', e)
+            print('Reason:', e)
             break
         finally:
             print(f'Vector results: {my_vector.vector}')
