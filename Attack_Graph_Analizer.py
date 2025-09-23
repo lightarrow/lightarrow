@@ -97,7 +97,7 @@ if __name__=='__main__':
     vector_limit = 1
     while count_vector < vector_limit:
         try:
-            for i in my_vector.split(sep='/'):
+            for i in vector_one.split(sep='/'):
                 j = i.split(sep=':')
                 vector_dictionary[j[0]] = j[1]
             count_vector += 1
