@@ -109,17 +109,24 @@ if __name__=='__main__':
     mi = ['N', 'L', 'H']
     # availability impact metrics
     ma = ['N', 'L', 'H']
-
-    impact_sub = 0
     vector_one = "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
     vector_dictionary = {}
     node_path = {}
     alternate_node_paths = {}
-
-    count_vector = 0
-    vector_limit = 1
+    hosts_collection = {}
     while count_vector < vector_limit:
         try:
+            for host in test_net:
+                AV = 'AV:' + random.choice(av)
+                AC = 'AC:' + random.choice(ac)
+                PR = 'PR:' + random.choice(pr)
+                UI = 'UI:' + random.choice(ui)
+                MS = 'MS:' + random.choice(ms)
+                MC = 'MC:' + random.choice(mc)
+                MI = 'MI:' + random.choice(mi)
+                MA = 'MA:' + random.choice(ma)
+                hosts_collection[host] = [AV, AC, PR, UI, MS, MC, MI, MA]
+
             for i in vector_one.split(sep='/'):
                 j = i.split(sep=':')
                 vector_dictionary[j[0]] = j[1]
