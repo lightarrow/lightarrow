@@ -92,7 +92,7 @@ class AttackChainMembers:
         self.exercise_status = 'augmetics active, bionics online, psy-booster 100%, mind impulse unit link active.'
 
 if __name__=='__main__':
-    #create 126 host IP newtork
+    #create 126 host IP network
     test_net = list(ip_network('192.168.1.0/25').hosts())
     # build up a random Base Score Metric for each host.
     # Exploitability Metrics
@@ -103,11 +103,11 @@ if __name__=='__main__':
     # scope
     ms = ['U', 'C']
     # confidentiality impact metrics
-    mc = ['X', 'N', 'L', 'H']
+    mc = ['N', 'L', 'H']
     # integrity impact metrics
-    mi = ['X', 'N', 'L', 'H']
+    mi = ['N', 'L', 'H']
     # availability impact metrics
-    ma = ['X', 'N', 'L', 'H']
+    ma = ['N', 'L', 'H']
 
     impact_sub = 0
     vector_one = "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
