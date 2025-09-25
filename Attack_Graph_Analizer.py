@@ -7,6 +7,7 @@ link: https://www.gnu.org/licenses/quick-guide-gplv3.html
 This code takes CVSS version 3.x vectors and computes them.
 The vectors are then matched against host data to determine weight and priority.
 The risk will be calculated once the host data has been calculated.
+The map will be graphed nodes of different colors indicating a progressive path to a goal with a suggested implementation of a vulnerability per host.
 """
 from logging import log
 
@@ -72,6 +73,7 @@ class HostCalculation:
         self.asset_loss_probability = 0
         self.asset_recovery_speed = 0
         self.asset_data_hours_lost_when_recovered = 0
+        self.node_hardness = 0
 
 class AttackChainMembers:
     def __init__(self):
@@ -80,12 +82,12 @@ class AttackChainMembers:
         self.vulnerability_correlations = {}
         self.cost_to_implement_attack = 0
         self.price_to_implement_attack = 0
-        self.man_hours_to_perform_breach = 0
+        self.hours_to_perform_breach = 0
         self.attack_team_members = {}
         self.attack_chain_delivered_to_red_team = True
         self.blue_team_prepared_for_exercise = True
         self.host_cartography_complete = True
-        self.table_top_exercise_status = 'Miniatures painted, generals prepared.'
+        self.exercise_status = 'augmetics active, bionics online, psy-booster 100%, mind impulse unit link active.'
 
 if __name__=='__main__':
     impact_sub = 0
@@ -93,6 +95,9 @@ if __name__=='__main__':
     vector_two = "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     vector_four = "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L"
     vector_dictionary = {}
+    node_path = {}
+    alternate_node_paths = {}
+
     count_vector = 0
     vector_limit = 1
     while count_vector < vector_limit:
@@ -108,4 +113,7 @@ if __name__=='__main__':
             break
         finally:
             print(f'Vector results: {vector_dictionary}')
+
+
+    def
 
