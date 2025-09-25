@@ -125,7 +125,6 @@ if __name__=='__main__':
             count_vector += 1
 
         except Exception as e:
-            log('Reason:', e)
             print('Reason:', e)
             break
         finally:
