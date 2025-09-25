@@ -9,6 +9,7 @@ The vectors are then matched against host data to determine weight and priority.
 The risk will be calculated once the host data has been calculated.
 The map will be graphed nodes of different colors indicating a progressive path to a goal with a suggested implementation of a vulnerability per host.
 """
+import logging
 import random
 from logging import log
 from ipaddress import ip_network
@@ -125,6 +126,7 @@ if __name__=='__main__':
             count_vector += 1
 
         except Exception as e:
+            logging.info(e)
             print('Reason:', e)
             break
         finally:
