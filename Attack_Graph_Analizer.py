@@ -9,7 +9,9 @@ The vectors are then matched against host data to determine weight and priority.
 The risk will be calculated once the host data has been calculated.
 The map will be graphed nodes of different colors indicating a progressive path to a goal with a suggested implementation of a vulnerability per host.
 """
+import random
 from logging import log
+from ipaddress import ip_network
 
 
 class AttackVector:
@@ -90,10 +92,24 @@ class AttackChainMembers:
         self.exercise_status = 'augmetics active, bionics online, psy-booster 100%, mind impulse unit link active.'
 
 if __name__=='__main__':
+    #create 126 host IP newtork
+    test_net = list(ip_network('192.168.1.0/25').hosts())
+    # build up a random Base Score Metric for each host.
+    # Exploitability Metrics
+    av = ['P', 'L', 'A', 'N']
+    ac = ['H', 'L']
+    pr = ['H', 'L', 'N']
+    ui = ['R', 'N']
+    ms = ['U', 'C']
+    # confidentiality impact metrics
+    mc = ['X', 'N', 'L', 'H']
+    # integrity impact metrics
+    mi = ['X', 'N', 'L', 'H']
+    # availability impact metrics
+    ma = ['X', 'N', 'L', 'H']
+
     impact_sub = 0
     vector_one = "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
-    vector_two = "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    vector_four = "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L"
     vector_dictionary = {}
     node_path = {}
     alternate_node_paths = {}
