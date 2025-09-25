@@ -100,9 +100,8 @@ if __name__=='__main__':
     ac = ['H', 'L']
     pr = ['H', 'L', 'N']
     ui = ['R', 'N']
-    ms = ['U', 'C']
     # scope
-    s = ['U', 'C']
+    ms = ['U', 'C']
     # confidentiality impact metrics
     mc = ['X', 'N', 'L', 'H']
     # integrity impact metrics
