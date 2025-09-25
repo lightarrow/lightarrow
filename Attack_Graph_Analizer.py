@@ -4,7 +4,7 @@ Author: Ronald Johnson
 Date: 9-22-2025
 License: GPLv3
 link: https://www.gnu.org/licenses/quick-guide-gplv3.html
-This code takes CVSS version 3.x vectors and computes them.
+This code takes CVSS vectors and computes them.
 The vectors are then matched against host data to determine weight and priority.
 The risk will be calculated once the host data has been calculated.
 The map will be graphed nodes of different colors indicating a progressive path to a goal with a suggested implementation of a vulnerability per host.
