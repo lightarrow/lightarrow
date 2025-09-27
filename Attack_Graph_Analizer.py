@@ -130,7 +130,7 @@ if __name__=='__main__':
             for i in vector_one.split(sep='/'):
                 j = i.split(sep=':')
                 vector_dictionary[j[0]] = j[1]
-            count_vector += 1
+
 
         except Exception as e:
             logging.info(e)
