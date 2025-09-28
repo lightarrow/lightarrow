@@ -21,8 +21,8 @@
 ### Action -> 
 ### Feedback <-
 # Policy table to track state. 
-# reward column 
-
+## reward column 
+## player or agent column
 ### objective uncover insider threat
 ### evaluation - assess how well the machine learning approached worked. 
 ### actionable insight - identify what to do based on the results of the
