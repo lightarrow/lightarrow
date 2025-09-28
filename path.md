@@ -1,4 +1,4 @@
-# "A computer program is said to learn from experience with respect to some clas of tasks T and performance measure P, if it's perfromance at tasks in T, as measured by P, improves with experience E." - Tom Michell
+# "A computer program is said to learn from experience with respect to some clas of tasks T and performance measure P, if it's performance at tasks in T, as measured by P, improves with experience E." - Tom Michell
 ## inference variables risk_per_host
 ### dependant_variable, independent_variable
 ## Predictive analytics
