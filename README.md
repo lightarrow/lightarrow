@@ -28,7 +28,7 @@ SOC Dashboard Insights
 We will lookat the risks faced by organizations and employees. 
 ![img.png](img.png)
 
-Sample Threat Scenario
+## Sample Threat Scenario
 “A member of a group decimated by layoffs suffers a drop in job satisfaction. Angry at the company, the employee uploads documents to Dropbox, planning to use them for personal gain.”
 This scenario would result in a number of observables in the generated data:
 Data streams end for laid-off co-workers, and they disappear from the LDAP directory.
