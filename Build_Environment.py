@@ -114,6 +114,8 @@ if __name__=='__main__':
     node_path = {}
     alternate_node_paths = {}
     hosts_collection = {}
+    count_vector = 0
+    vector_limit = 10000
     while count_vector < vector_limit:
         try:
             for host in test_net:
